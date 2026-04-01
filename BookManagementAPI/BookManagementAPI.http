@@ -1,0 +1,34 @@
+@BookManagementAPI_HostAddress = https://localhost:7268
+
+GET {{BookManagementAPI_HostAddress}}/api/books
+
+###
+
+POST {{BookManagementAPI_HostAddress}}/api/books
+Content-Type: application/json
+
+{
+  "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+  "author": "Samuel Beckett",
+  "genre": "Philosophy",
+  "price": 15000,
+  "isAvailable": true,
+  "publishedDate": "1952-07-17"
+}
+
+###
+
+@id=4
+GET {{BookManagementAPI_HostAddress}}/api/books/{{id}}
+
+###
+
+
+PUT {{BookManagementAPI_HostAddress}}/api/books/{{id}}
+Content-Type: application/json
+
+{
+  
+}
+
+###
